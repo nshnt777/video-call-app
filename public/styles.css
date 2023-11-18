@@ -1,0 +1,21 @@
+
+
+#local-video{
+    border: 2px solid red;
+    height: 500px;
+    width: 500px;
+}
+
+#remote-video{
+    border: 2px solid blue;
+    height: 500px;
+    width: 500px;
+}
+
+video{
+    transform: scaleX(-1);
+}
+
+select{
+    width: 200px;
+}

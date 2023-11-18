@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VC App</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="/localUtils.js" type="module" defer></script>
+    <script src="/signaling.js" type="module" defer></script>
+</head>
+<body>
+    <h2></h2>
+    <h3>Your ID: <span id="myID"></span></h3>
+    <video id="local-video" muted>
+
+    </video>
+    <div id="toggle">
+        <button id="toggle-video">Toggle Video</button>
+        <button id="toggle-audio">Toggle Audio</button>
+        <select id="audio-devices">
+            <option value="none">Select Microphone</option>
+        </select>
+        <button id="switch-audio">Switch Audio</button>
+    </div>
+    <button id="make-call">Join Call</button>
+    <div>
+        <p id="status"></p>
+    </div>
+    <video id="remote-video">
+
+    </video>
+</body>
+</html>
